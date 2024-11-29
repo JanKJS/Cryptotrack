@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-background-light rounded-lg border border-background-lighter p-4 hover:border-primary/30 transition-colors;
+  }
+  
+  .stat-card {
+    @apply card flex flex-col justify-between;
+  }
+  
+  .stat-title {
+    @apply text-text-secondary text-sm font-medium;
+  }
+  
+  .stat-value {
+    @apply text-xl font-bold text-text-primary;
+  }
+  
+  .stat-subtitle {
+    @apply text-sm text-text-tertiary;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-background-lighter text-text-primary hover:bg-background-light;
+  }
+}
